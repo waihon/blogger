@@ -7,6 +7,8 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @comment = Comment.new # so that a blank comment won't be shown on article page
+    @comment.article_id = @article.id
   end
 
   def new
