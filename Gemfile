@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Easy file attachment management for ActiveRecord
 gem 'paperclip'
+
+# Lightweight and straighforward authentication gem
+gem 'sorcery'
