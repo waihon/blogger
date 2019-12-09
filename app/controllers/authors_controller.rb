@@ -1,4 +1,5 @@
 class AuthorsController < ApplicationController
+  before_action :require_authentication, except: [:new, :create]
   before_action :zero_authors_or_authenticated, only: [:new, :create]
   before_action :set_author, only: [:show, :edit, :update, :destroy]
 
